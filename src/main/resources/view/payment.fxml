@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="root" fx:id="root" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gymmanagmentsystem.controller.PaymentController">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" height="768.0" opacity="0.88" stroke="BLACK" strokeType="INSIDE" width="1364.0" />
+        <ImageView fitHeight="766.0" fitWidth="1364.0" layoutY="6.0" opacity="0.11" pickOnBounds="true">
+            <image>
+                <Image url="@../img/homepagebackground.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="257.0" fitWidth="321.0" layoutX="111.0" layoutY="-46.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../img/logo.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="1124.0" layoutY="61.0" prefHeight="53.0" prefWidth="169.0" text="PAYMENT" textFill="#fb5b21">
+            <font>
+                <Font name="System Bold" size="34.0" />
+            </font>
+        </Label>
+      <Label layoutX="172.0" layoutY="164.0" text="Member ID" textFill="#fb5b21">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField id="txtId" fx:id="memberidtxt" layoutX="320.0" layoutY="170.0" prefHeight="25.0" prefWidth="67.0" style="-fx-background-radius: 60;" />
+      <Button fx:id="psearch" layoutX="404.0" layoutY="169.0" mnemonicParsing="false" onAction="#btnpOnSearch" prefHeight="25.0" prefWidth="66.0" style="-fx-border-radius: 60; -fx-border-width: 3; -fx-background-color: #1e1e1e; -fx-border-color: #fb5b21;" text="Search" textFill="WHITE" />
+      <Label layoutX="172.0" layoutY="235.0" text="Name" textFill="#fb5b21">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="btnpname" layoutX="173.0" layoutY="290.0" prefHeight="33.0" prefWidth="289.0" />
+      <Label layoutX="171.0" layoutY="448.0" text="Date" textFill="#fb5b21">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="174.0" layoutY="542.0" text="Amount" textFill="#fb5b21">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="btnpamount" layoutX="176.0" layoutY="600.0" prefHeight="33.0" prefWidth="289.0" />
+      <Button fx:id="btnpayed" layoutX="179.0" layoutY="671.0" mnemonicParsing="false" onAction="#btnpayedOnAction" prefHeight="33.0" prefWidth="80.0" style="-fx-background-color: #fb5b21; -fx-background-radius: 60;" text="PAYED" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tblPayment" layoutX="680.0" layoutY="173.0" prefHeight="426.0" prefWidth="606.0">
+        <columns>
+            <TableColumn fx:id="coPaymentID" prefWidth="100.0" text="Payment ID" />
+            <TableColumn fx:id="coPaymentDate" prefWidth="176.0" text="Payment Date" />
+            <TableColumn fx:id="coPaymentAmount" prefWidth="168.0" text="Amount" />
+            <TableColumn fx:id="coMemberId" prefWidth="161.0" text="Member ID" />
+        </columns>
+      </TableView>
+      <Label layoutX="173.0" layoutY="343.0" text="Payment ID" textFill="#fb5b21">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="btnpid" layoutX="173.0" layoutY="399.0" prefHeight="33.0" prefWidth="289.0" />
+      <DatePicker fx:id="btnpdat" layoutX="172.0" layoutY="499.0" prefHeight="31.0" prefWidth="290.0" />
+      <JFXButton fx:id="btnrefresh" layoutX="1040.0" layoutY="69.0" onAction="#btnrefreshOnAcrtion" prefHeight="44.0" prefWidth="34.0">
+         <font>
+            <Font size="1.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="36.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/refresh2.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Pane layoutX="-1.0" prefHeight="767.0" prefWidth="56.0" style="-fx-background-color: #282e33;">
+         <children>
+            <JFXButton fx:id="logoutbtn" layoutX="6.0" layoutY="628.0" onAction="#btnLogoutOnACtion" prefHeight="53.0" prefWidth="52.0">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/5.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="txtInsUpdateAndDelete" layoutX="12.0" layoutY="331.0" onAction="#txtInsUpdateAndDeleteOnAction" prefHeight="34.0" prefWidth="40.0">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/insUpDel2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="dashboardbtn" layoutX="2.0" layoutY="33.0" onAction="#dashboardbtnOnAction" prefHeight="43.0" prefWidth="52.0">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/dashboard.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="memberAddbtn" layoutX="7.0" layoutY="104.0" onAction="#btnMemberAddOnAction" prefHeight="44.0" prefWidth="34.0">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnInsAdd" layoutX="12.0" layoutY="183.0" onAction="#btnInsAddOnAction" prefHeight="34.0" prefWidth="40.0">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/ins1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="updateAndDeletebtn1" layoutX="4.0" layoutY="260.0" onAction="#btnUpdateAndDeleteOnAction" prefHeight="37.0" prefWidth="52.0">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="reportbtn" layoutX="10.0" layoutY="404.0" onAction="#btnReportOnAction" prefHeight="44.0" prefWidth="44.0">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/3.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="txtReportIns" layoutX="6.0" layoutY="484.0" onAction="#txtReportInsOnAction" prefHeight="37.0" prefWidth="52.0">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/reportIns.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnpayment" layoutX="11.0" layoutY="557.0" onAction="#btnPaymentOnAction" prefHeight="44.0" prefWidth="40.0">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/4.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+      <TextField fx:id="paymentDelete" layoutX="684.0" layoutY="671.0" promptText="Enter Payment Id" />
+      <Button fx:id="DeleteButtonPayment" layoutX="847.0" layoutY="671.0" mnemonicParsing="false" onAction="#DeleteButtonPaymentOnAction" style="-fx-background-color: #fb5b21;" text="Delete" textFill="WHITE" />
+    </children>
+</AnchorPane>

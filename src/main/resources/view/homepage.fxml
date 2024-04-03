@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="root" fx:id="root" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gymmanagmentsystem.controller.HomePage">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="768.0" opacity="0.88" stroke="BLACK" strokeType="INSIDE" width="1364.0" />
+      <ImageView fitHeight="766.0" fitWidth="1368.0" opacity="0.11" pickOnBounds="true">
+         <image>
+            <Image url="@../img/homepagebackground.jpg" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="767.0" prefWidth="56.0" style="-fx-background-color: #282e33;">
+         <children>
+            <JFXButton fx:id="logoutbtn" layoutX="6.0" layoutY="628.0" onAction="#btnLogoutOnACtion" prefHeight="53.0" prefWidth="52.0">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/5.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="txtInsUpdateAndDelete" layoutX="12.0" layoutY="331.0" onAction="#txtInsUpdateAndDeleteOnAction" prefHeight="34.0" prefWidth="40.0">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/insUpDel2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="dashboardbtn" layoutX="2.0" layoutY="33.0" onAction="#dashboardbtnOnAction" prefHeight="43.0" prefWidth="52.0">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/dashboard.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="memberAddbtn" layoutX="7.0" layoutY="104.0" onAction="#btnMemberAddOnAction" prefHeight="44.0" prefWidth="34.0">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnInsAdd" layoutX="12.0" layoutY="183.0" onAction="#btnInsAddOnAction" prefHeight="34.0" prefWidth="40.0">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/ins1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="updateAndDeletebtn" layoutX="4.0" layoutY="260.0" onAction="#btnUpdateAndDeleteOnAction" prefHeight="37.0" prefWidth="52.0">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="reportbtn" layoutX="10.0" layoutY="404.0" onAction="#btnReportOnAction" prefHeight="44.0" prefWidth="44.0">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/3.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="txtReportIns" layoutX="6.0" layoutY="484.0" onAction="#txtReportInsOnAction" prefHeight="37.0" prefWidth="52.0">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/reportIns.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="paymentbtn" layoutX="11.0" layoutY="557.0" onAction="#btnPaymentOnAction" prefHeight="44.0" prefWidth="40.0">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/4.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children></Pane>
+      <ImageView fitHeight="257.0" fitWidth="321.0" layoutX="157.0" layoutY="-46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="818.0" layoutY="61.0" prefHeight="53.0" prefWidth="321.0" text="ADD NEW MEMBER" textFill="#fb5b21">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="221.0" layoutY="159.0" text="Member ID" textFill="#fb5b21">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="36.0" layoutX="479.0" layoutY="159.0" stroke="BLACK" strokeType="INSIDE" width="57.0" />
+      <Ellipse fill="WHITE" layoutX="485.0" layoutY="177.0" radiusX="20.0" radiusY="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Ellipse fill="WHITE" layoutX="532.0" layoutY="177.0" radiusX="20.0" radiusY="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Label layoutX="221.0" layoutY="239.0" text="Name" textFill="#fb5b21">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="221.0" layoutY="340.0" text="Mobile Number" textFill="#fb5b21">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="221.0" layoutY="449.0" text="Adress" textFill="#fb5b21">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="221.0" layoutY="567.0" text="Age" textFill="#fb5b21">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="221.0" layoutY="293.0" prefHeight="34.0" prefWidth="337.0" />
+      <TextField id="txtMobileNumber" fx:id="txtMobileNumber" layoutX="222.0" layoutY="391.0" prefHeight="34.0" prefWidth="337.0" />
+      <TextField id="txtAddress" fx:id="txtAddress" layoutX="221.0" layoutY="503.0" prefHeight="34.0" prefWidth="337.0" />
+      <TextField id="txtAge" fx:id="txtAge" layoutX="221.0" layoutY="625.0" prefHeight="34.0" prefWidth="337.0" />
+      <Label layoutX="797.0" layoutY="176.0" text="Email" textFill="#fb5b21">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="797.0" layoutY="277.0" text="Join Date" textFill="#fb5b21">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="797.0" layoutY="386.0" text="Gender" textFill="#fb5b21">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="797.0" layoutY="504.0" text="Membership Type" textFill="#fb5b21">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField id="txtEmail" fx:id="txtEmail" layoutX="797.0" layoutY="230.0" prefHeight="34.0" prefWidth="337.0" />
+      <TextField id="txtGender" fx:id="txtGender" layoutX="797.0" layoutY="440.0" prefHeight="34.0" prefWidth="337.0" />
+      <TextField id="txtMembershipType" fx:id="txtMembershipType" layoutX="797.0" layoutY="562.0" prefHeight="34.0" prefWidth="337.0" />
+      <Button layoutX="801.0" layoutY="638.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="34.0" prefWidth="86.0" style="-fx-background-color: #fb5b21;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="1048.0" layoutY="638.0" mnemonicParsing="false" onAction="#btnResetOnAction" prefHeight="34.0" prefWidth="86.0" style="-fx-background-color: #fb5b21;" text="Reset" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TextField id="txtId" fx:id="memberidtxt" layoutX="476.0" layoutY="165.0" prefHeight="25.0" prefWidth="67.0" />
+      <DatePicker fx:id="txtDate" layoutX="798.0" layoutY="332.0" prefHeight="34.0" prefWidth="337.0" />
+   </children>
+</AnchorPane>

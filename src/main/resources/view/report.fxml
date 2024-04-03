@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="root" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gymmanagmentsystem.controller.reportController">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" height="768.0" opacity="0.88" stroke="BLACK" strokeType="INSIDE" width="1366.0" />
+        <ImageView fitHeight="767.0" fitWidth="1365.0" layoutX="-1.0" opacity="0.11" pickOnBounds="true">
+            <image>
+                <Image url="@../img/homepagebackground.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="257.0" fitWidth="321.0" layoutX="57.0" layoutY="-51.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../img/logo.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="1030.0" layoutY="43.0" prefHeight="53.0" prefWidth="297.0" text="LIST OF MEMBERS" textFill="#fb5b21">
+            <font>
+                <Font name="System Bold" size="34.0" />
+            </font>
+        </Label>
+        <JFXButton fx:id="updateAndDeletebtn" layoutX="2.0" layoutY="213.0" onAction="#btnUpdateAndDeleteOnAction">
+            <font>
+                <Font size="1.0" />
+            </font>
+        </JFXButton>
+      <TableView fx:id="cltblcustomer" layoutX="108.0" layoutY="140.0" prefHeight="520.0" prefWidth="1219.0">
+        <columns>
+          <TableColumn fx:id="coMemberId" prefWidth="72.0" text="Member Id" />
+          <TableColumn fx:id="coName" prefWidth="133.0" text="Name" />
+            <TableColumn fx:id="coAddress" minWidth="7.0" prefWidth="185.0" text="Address" />
+            <TableColumn fx:id="coAge" minWidth="7.0" prefWidth="100.0" text="Age" />
+            <TableColumn fx:id="coGender" prefWidth="139.0" text="Join Date" />
+            <TableColumn fx:id="coContactNumber" minWidth="7.0" prefWidth="164.0" text="Email" />
+            <TableColumn fx:id="coJoinDate" minWidth="7.0" prefWidth="143.0" text="Contact Number" />
+            <TableColumn fx:id="coEmail" minWidth="7.0" prefWidth="130.0" text="Gender" />
+            <TableColumn fx:id="coMembershipType" minWidth="7.0" prefWidth="198.0" text="Membership Type" />
+            
+        </columns>
+      </TableView>
+      <Pane layoutX="-1.0" prefHeight="767.0" prefWidth="56.0" style="-fx-background-color: #282e33;">
+         <children>
+            <JFXButton fx:id="logoutbtn" layoutX="6.0" layoutY="628.0" onAction="#btnLogoutOnACtion" prefHeight="53.0" prefWidth="52.0">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/5.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="txtInsUpdateAndDelete" layoutX="12.0" layoutY="331.0" onAction="#txtInsUpdateAndDeleteOnAction" prefHeight="34.0" prefWidth="40.0">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/insUpDel2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="dashboardbtn" layoutX="2.0" layoutY="33.0" onAction="#dashboardbtnOnAction" prefHeight="43.0" prefWidth="52.0">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/dashboard.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="memberAddbtn" layoutX="7.0" layoutY="104.0" onAction="#btnMemberAddOnAction" prefHeight="44.0" prefWidth="34.0">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnInsAdd" layoutX="12.0" layoutY="183.0" onAction="#btnInsAddOnAction" prefHeight="34.0" prefWidth="40.0">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/ins1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="updateAndDeletebtn1" layoutX="4.0" layoutY="260.0" onAction="#btnUpdateAndDeleteOnAction" prefHeight="37.0" prefWidth="52.0">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="reportbtn" layoutX="10.0" layoutY="404.0" onAction="#btnReportOnAction" prefHeight="44.0" prefWidth="44.0">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/3.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="txtReportIns" layoutX="6.0" layoutY="484.0" onAction="#txtReportInsOnAction" prefHeight="37.0" prefWidth="52.0">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/reportIns.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="paymentbtn" layoutX="11.0" layoutY="557.0" onAction="#btnPaymentOnAction" prefHeight="44.0" prefWidth="40.0">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/4.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>
